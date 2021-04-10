@@ -1,0 +1,17 @@
+.messaging-template {
+    position: relative;
+
+    .message-bg {
+        width: auto;
+        height: 50vh;
+        box-shadow: 0 0 10px rgba(0, 0, 54);
+        padding: 20px 50px;
+        background-color: #e8eaeb;
+        color: #000;
+    }
+
+
+    .btn-outline-danger:disabled {
+        cursor: no-drop;
+    }
+}

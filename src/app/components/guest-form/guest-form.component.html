@@ -1,0 +1,86 @@
+<div class="messaging-template">
+  <div class="container">
+    <h1 class="text-danger">App Messaging Template</h1>
+    <hr />
+    <div class="row">
+      <div class="col-md-6">
+        <div class="message-bg">
+          <app-messaging
+            [userName]="guest"
+            [companyName]="company"
+            [room]="room"
+          ></app-messaging>
+        </div>
+      </div>
+      <!-- User input -->
+      <div class="col-md-6 mx-auto">
+        <form
+          #validateForm="ngForm"
+          #handleMessage="ngForm"
+          (ngSubmit)="onSubmitMessage(handleMessage.value)"
+        >
+          <div class="form-group">
+            <label for="">Guest Name</label>
+            <input
+              type="text"
+              class="form-control"
+              name="guest"
+              placeholder="Enter your name"
+              ngModel
+            />
+          </div>
+          <!-- Hotel name -->
+
+          <div class="form-group">
+            <label for="">Company</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter your compnay name"
+              name="company"
+              ngModel
+            />
+          </div>
+
+          <!-- ROOM Number -->
+          <div class="form-group">
+            <label for="">Room Number</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter your room number"
+              name="room"
+              ngModel
+            />
+          </div>
+
+          <!-- Select message -->
+          <div class="form-group">
+            <label for="">Select a Message</label>
+            <select
+              name="title"
+              id="title"
+              ngModel
+              required
+              class="form-control"
+            >
+              <option *ngFor="let message of data['messages']; let i = index"
+                >{{message.title}}</option
+              >
+              <!-- <option *ngFor="let message of data; let i = index">{{message.title}}</option> -->
+            </select>
+          </div>
+
+          <div class="form-group">
+            <button
+              class="btn btn-outline-danger"
+              [disabled]="!validateForm.valid"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

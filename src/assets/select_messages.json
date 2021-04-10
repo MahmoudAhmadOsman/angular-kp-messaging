@@ -1,0 +1,19 @@
+{
+    "messages": [
+        {
+            "title": "Need 1 room",
+            "welcome": "and welcome to ",
+            "message_append": "is now ready you. Enjoy your stay, and let us know if you need anything."
+        },
+        {
+            "title": "Need 2 rooms",
+            "welcome": "and welcome to ",
+            "message_append": "is now ready you. Enjoy your stay, and let us know if you need anything."
+        },
+        {
+            "title": "Need more than 2 rooms",
+            "welcome": "and welcome to ",
+            "message_append": "is now ready you. Enjoy your stay, and let us know if you need anything."
+        }
+    ]
+}

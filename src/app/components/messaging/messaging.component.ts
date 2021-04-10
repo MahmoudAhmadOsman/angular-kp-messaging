@@ -12,7 +12,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class MessagingComponent implements OnInit {
 
   public getGreeting: any;
-  @Input() userName: string;
+  @Input() guestName: string;
   @Input() companyName: string;
   @Input() room: string
   public messageTemplate: string
@@ -38,7 +38,7 @@ export class MessagingComponent implements OnInit {
 
     // read local json fileReplacements
     this.http.get("assets/guest_company.json").subscribe((data) => {
-      this.userName = data['data'][0]['guest']
+      this.guestName = data['data'][0]['guest']
       this.companyName = data['data'][0]['company']
       this.room = data['data'][0]['room']
     })

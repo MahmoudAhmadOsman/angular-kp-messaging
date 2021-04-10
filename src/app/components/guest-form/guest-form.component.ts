@@ -12,6 +12,9 @@ export class GuestFormComponent implements OnInit {
   public company: string;
   public room: string;
   public data: any;
+
+
+  
   constructor(private http: HttpClient) {
     this.guest = 'Ethan';
     this.company = 'California Hotels';

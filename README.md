@@ -8,7 +8,7 @@ $ git clone http://github.com/MahmoudAhmadOsman/kp-messaging.git
 ```bash
 $ npm install    
 ```
-And then run this command to compile the project to open it & see the application
+#### Then use this command to compile the project to open it & see the application
 
 ```bash
  $ ng serve -o    

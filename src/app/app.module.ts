@@ -9,12 +9,14 @@ import { AppComponent } from './app.component';
 import { MessagingComponent } from './components/messaging/messaging.component';
 import { GuestFormComponent } from './components/guest-form/guest-form.component';
 import { FormsModule } from '@angular/forms';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MessagingComponent,
-    GuestFormComponent
+    GuestFormComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

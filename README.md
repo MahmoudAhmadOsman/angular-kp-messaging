@@ -27,6 +27,6 @@ Please, visit my website
 [www.mahmoudosman.com](http://www.mahmoudosman.com/)
 
 
-### Social Media
+### Follow me on LinkedIn
 
 LinkedIn Profile Link: [LinkedIn](https://www.linkedin.com/in/mahmoudaoman/) 

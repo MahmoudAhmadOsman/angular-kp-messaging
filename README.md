@@ -1,7 +1,7 @@
 ## KpMessaging
 
 ```bash
-$ git clone https://github.com/MahmoudAhmadOsman/kp-messaging.git
+$ git clone http://github.com/MahmoudAhmadOsman/kp-messaging.git
 ```
 
 #### Run the project using this command

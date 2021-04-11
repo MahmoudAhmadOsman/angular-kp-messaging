@@ -1,9 +1,17 @@
-.footer-container{
-    width:auto;
-    height:auto;
-   
+.footer-container {
+    width: auto;
+    height: auto;
     position: relative;
-    background:#eee;
+    background: #eee;
     margin: 30% auto 0px auto;
-    padding:40px;
+    padding: 40px;
+
+    p {
+        color: #b3adad;
+        font-size:12px;
+
+        a {
+            color: #6f9bc8;
+        }
+    }
 }

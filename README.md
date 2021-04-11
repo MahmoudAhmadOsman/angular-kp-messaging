@@ -11,9 +11,22 @@ $ npm install
 And then run this command to compile the project & open it on the browser
 
 ```bash
- $ng serve -o    
+ $ ng serve -o    
 ```
 
 
 #### Used language or Framework
  - Typescript & Angular
+
+
+________________________________________________________
+
+### My Website
+
+Please, visit my website
+[www.mahmoudosman.com](http://www.mahmoudosman.com/)
+
+
+### Social Media
+
+LinkedIn Profile Link: [LinkedIn](https://www.linkedin.com/in/mahmoudaoman/) 

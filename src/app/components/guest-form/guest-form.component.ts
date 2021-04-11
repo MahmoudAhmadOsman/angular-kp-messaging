@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { async } from 'rxjs/internal/scheduler/async';
 
 @Component({
   selector: 'app-guest-form',
@@ -12,45 +13,47 @@ export class GuestFormComponent implements OnInit {
   public company: string;
   public room: string;
   public data: any;
+  public messageTitle: any;
+  public messageAppend: any;
 
-
-  
   constructor(private http: HttpClient) {
-    this.guest = 'Ethan';
+   
     this.company = 'California Hotels';
     this.room = 'Room 304';
+
+  
    }
 
   ngOnInit(): void {
-    this.http.get("assets/select_messages.json").subscribe((data) => {
-      console.log(data)
-      this.data = data;
-      //this.data = data.messages[0].templates.title
-      // for (let i = 0; i < data.messages.length; i++) {
-      //   for (let x of data.messages[i].title) {
-      //     //console.log("SOME", x.name);
-      //     this.data.push(x.name)
 
-      //   }
-
-      //   // for (let x of data.buildings[i].workers) {
-      //   //   // console.log("SOME", x.name);
-      //   //   this.workers.push(x.name)
-      //   // }
-
-
-      //   //this.name.push(data.buildings[i].name)
-
-      // }
-
-      //this.data = data
-    })
   }
 
-  onSubmitMessage(data) {
+
+  //Randam Messages
+   onSubmitMessage(data) {
+     this.http.get("assets/select_messages.json").subscribe((res) => {
+      
+      //console.log("DATA", res)
+      if (data.title === 'fmt') {
+        this.messageTitle = res['messages'][0].welcome
+        this.messageAppend = res['messages'][0].message_append
+      }
+      else if (data.title === 'smt') {
+        this.messageTitle = res['messages'][1].welcome
+        this.messageAppend = res['messages'][1].message_append
+      }
+      else if (data.title === 'thmt') {
+        this.messageTitle = res['messages'][2].welcome
+        this.messageAppend = res['messages'][2].message_append
+      }
+      
+    })
+
+    // console.log("FORM DATA", data.title)
     this.guest = data.guest;
     this.company = data.company;
     this.room = data.room;
+    
   }
 
 }

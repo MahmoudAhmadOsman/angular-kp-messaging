@@ -3,13 +3,26 @@
 
     .message-bg {
         width: auto;
-        height: 50vh;
-        box-shadow: 0 0 10px rgba(0, 0, 54);
-        padding: 20px 50px;
+        height: 20vh;
         background-color: #e8eaeb;
         color: #000;
+        border-radius: 10px;
+        position: relative;
+        margin: 20px;
+        padding: 20px 50px;
     }
 
+    .message-bg.arrow-down:after {
+        content: " ";
+        position: absolute;
+        right: -15px;
+        top: 15px;
+        border-top: 15px solid transparent;
+        border-right: none;
+        border-left: 15px solid #e8eaeb;
+        border-bottom: 15px solid transparent;
+
+    }
 
     .btn-outline-danger:disabled {
         cursor: no-drop;

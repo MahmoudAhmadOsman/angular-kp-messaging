@@ -4,7 +4,7 @@
 $ git clone http://github.com/MahmoudAhmadOsman/kp-messaging.git
 ```
 
-#### cd to the project & run the project using this command
+#### cd to the project & run this command
 ```bash
 $ npm install    
 ```

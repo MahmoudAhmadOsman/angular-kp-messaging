@@ -6,7 +6,12 @@ $ git clone https://github.com/MahmoudAhmadOsman/kp-messaging.git
 
 #### Run the project using the command
 ```bash
-$ npm install   & then run:  ng serve -o
+$ npm install    
+```
+And then run this command to compile the project & open it on the browser
+
+```bash
+ $ng serve -o    
 ```
 
 

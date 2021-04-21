@@ -26,7 +26,7 @@ For this project, I have decided to use Angular, version 10. I chose Angular bec
 ##### Your process for verifying the correctness of you program
 -	Mainly, I have used console logs and browser developer tools in order to debug and see if there is any issue(s) or error(s) in my code, but I am sure this is not the best way to verify the correctness of your program, but at this time, my knowledge about testing frameworks such as Jest, Jasmine or Mocha is limited.  
 ##### What didn't you get to, or what else might you do with more time?
-- N/A
+> N/A
 
 
 

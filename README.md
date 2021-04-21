@@ -16,7 +16,7 @@ Then use this command to compile the project to open it & see the application
 
 
 #### Used language or Framework
- - Typescript & Angular
+ - JavaScript/Typescript & Angular
 
 
 
